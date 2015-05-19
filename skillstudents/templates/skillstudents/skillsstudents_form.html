@@ -1,0 +1,15 @@
+{% block content %}
+
+<h2> Hola {{full_name}} ya estas logueado </h2>
+<p>Click <a href="/accounts/logout/"> aqui </a> para salirte </p>
+{% endblock %}
+
+<form action='/accounts/studentadded/' method='post'>
+{% csrf_token %}
+{{ form.as_p }}
+
+<p><input type='submit' value="Guardar"></p>
+
+</form>
+
+																																																									
